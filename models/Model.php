@@ -26,6 +26,8 @@ class Model
             $no_penjualan = intval(substr($data->no_penjualan, -5));
             if ($session_id == null && ($data->temp_session != session_id())) {
                 $urut = $no_penjualan+1;
+            } elseif ($data->temp_session == session_id()) {
+                $urut = $no_penjualan;
             } else {
                 $urut = $no_penjualan;
             }
