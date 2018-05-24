@@ -33,7 +33,7 @@ class Controller
     {
         $pesan = isset($_SESSION['pesan']) && !empty($_SESSION['pesan']) ? $_SESSION['pesan'] : false;
         require_once 'views/partials/header.php';
-        if (isset($_SESSION['username']) && !empty($_SESSION['username']) && $_SESSION['level'] == "member") {
+        if (isset($_SESSION['username']) && !empty($_SESSION['username']) && isset($_SESSION['level']) && $_SESSION['level'] == "member") {
             echo 'member area';
         } else {
             require_once 'views/auth_form.php';
@@ -57,7 +57,19 @@ class Controller
                 $_SESSION['pesan'] = "Uppss..Username atau Password Salah. Coba Ulangi lagi.!!";
             }
         } elseif ($this->do_register) {
-
+            if ($this->user_password != $this->user_password_repeat) {
+                $_SESSION['pesan'] = "Uppss..password tidak sama!!";
+            } else {
+                $simpan_data_register = [
+                    'user_username' => $this->user_username,
+                    'user_nama' => $this->user_nama,
+                    'user_email' => $this->user_email,
+                    'user_password' => md5($this->user_password),
+                    'user_level' => 'member',
+                ];
+                $this->model->insert('user', $simpan_data_register);
+                $_SESSION['pesan'] = "Register berhasil!!";
+            }
         }
         header("location:" . base_url . "/?page=member");
     }

@@ -28,7 +28,7 @@
                         <div class="form-group ">
                             <div class="input-group">
                                 <div class="input-group-addon"><i class="fa fa-key"></i></div>
-                                <input type="password" name="password" class="form-control" placeholder="Password" required="required">
+                                <input type="password" name="user_password" class="form-control" placeholder="Password" required="required">
                             </div>
                         </div>
                         <input type="submit" name="do_login" value="Login" class="btn btn-success btn-custom">

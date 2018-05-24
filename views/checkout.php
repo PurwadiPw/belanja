@@ -13,6 +13,7 @@
 										<th>Sub Total</th>
 									</tr>
 									<?php $no=1; ?>
+									<?php $total=0; ?>
 									<?php foreach($this->cartList() as $cart): ?>
 									<tr>
 										<form action="" method="post">

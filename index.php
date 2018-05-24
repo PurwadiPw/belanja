@@ -2,7 +2,7 @@
 session_start();
 
 // konfigurasi
-define('base_url', '/tugas-toko-online');
+define('base_url', '/PPL1/belanja');
 
 // load class controller terlebih dahulu
 include_once "controllers/Controller.php";

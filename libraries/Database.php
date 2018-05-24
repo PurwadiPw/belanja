@@ -2,8 +2,8 @@
 class Database
 {
     const DB_HOST = 'localhost';
-    const DB_USER = 'simyantu';
-    const DB_PASS = 'jackass';
+    const DB_USER = 'root';
+    const DB_PASS = '';
     const DB_NAME = 'belanja';
 
     private static $mysqli = null;

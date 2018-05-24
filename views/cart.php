@@ -22,6 +22,7 @@
 								<th colspan="2">Aksi</th>
 							</tr>
 							<?php $no=1; ?>
+							<?php $total=0; ?>
 							<?php foreach($this->cartList() as $cart): ?>
 							<tr>
 								<form action="" method="post">
@@ -60,5 +61,6 @@
 		            </div>
 		        </div>
 						<?php endif; ?>
-						<hr>
+						<hr> 
+						<?php require_once 'produk_list.php'; ?>
         </div>
