@@ -1,0 +1,169 @@
+body, html {
+    width: 100%;
+    height: 100%;
+}
+body {
+    padding-top: 80px;
+}
+body, h1, h2, h3, h4, h5, h6 {
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+}
+.text-right {
+    text-align: right !important;
+}
+.text-left {
+    text-align: left !important;
+}
+#content {
+    min-height: 600px;
+}
+#banner_image {
+    margin-top: -50px;
+    padding-bottom: 50px;
+    text-align: center;
+    color: #f8f8f8;
+    background: url(../img/intro-bg_1.jpg) no-repeat center center;
+    background-size: cover;
+}
+#banner_content {
+    position: relative;
+    padding-top: 6%;
+    padding-bottom: 6%;
+    margin-top: 12%;
+    margin-bottom: 12%;
+    background-color: rgba(0, 0, 0, 0.7);
+    max-width: 660px;
+}
+#item_list {
+    padding-top: 50px;
+}
+#login-panel .panel-footer {
+    font-weight: normal;
+}
+.title-col{
+    padding: 10px 0;
+    border-bottom: 2px solid #02baab;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.red {
+    color: red;
+}
+#settings-container {
+    margin-bottom: 10px;
+}
+.navbar-brand {
+    font-size: 20px;
+}
+@media(max-width:768px) {
+    #banner_content {
+        padding-bottom: 15%;
+    }
+    footer {
+        text-align: left;
+    }
+}
+.remove_item_link {
+    color: #0000ff;
+}
+.login-register-form-section {
+    max-width: 350px;
+    margin: 0 auto;
+}
+.login-register-form-section i {
+    width: 10px;
+}
+.login-register-form-section .nav-justified>li>a {
+    color: #2abb9b;
+}
+.login-register-form-section .nav-justified>li.active>a {
+    background-color: #2abb9b;
+    border-color: #2abb9b;
+    color: white;
+}
+.login-register-form-section .nav-justified>li>a, 
+.login-register-form-section .nav-justified>li.active>a {
+    text-align: center;
+    border-radius: 0;
+}
+.login-register-form-section .nav-justified {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.login-register-form-section .btn-custom {
+    width: 100%;
+    background-color: #2abb9b;
+    border-color: #2abb9b;
+    margin-bottom: 0.5em;
+    border-radius: 0;
+}
+.login-register-form-section .btn-custom:hover {
+    width: 100%;
+    background-color: #48A497;
+    border-color: #2abb9b;
+}
+.login-register-form-section .form-group {
+    padding: 0 20px;
+}
+
+.table-cart th{
+    padding: 10px;
+    background: #02baab;
+    border: 1px solid #02baab;
+    text-align: center;
+}
+.table-cart td{
+    padding: 10px;
+    border: 1px solid #02baab;
+    text-align: center;
+    color: #4f5f70;
+    vertical-align: middle !important;
+}
+.table-cart td input[type="text"]{
+    width: 80px;
+    padding: 10px;
+    border: 1px solid #e4e4e4;
+    border-radius: 3px;
+    text-align: center;
+    box-shadow: inset 0 0 2px rgba(0,0,0,.2);
+}
+
+.form-checkout{
+    background: #f3f3f3;
+    border-radius: 3px;
+}
+.form-checkout h3{
+    padding: 10px;
+    text-align: center;
+    background: #02baab;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+.form-checkout-table{
+    width: 100%;
+    padding: 20px;
+}
+.form-checkout-table table{
+    width: 100%;
+}
+.form-checkout-table table td h5{
+    font-weight: normal;
+    font-size: 14px;
+}
+.form-checkout-table table td input[type="text"], textarea{
+    padding: 10px;
+    border: 1px solid #e4e4e4;
+    border-radius: 3px;
+    width: 100%;
+    box-shadow: inset 0 0 2px rgba(0,0,0,.2);
+    margin-bottom: 10px;
+}
+footer {
+    padding: 10px 0;
+    background-color: #101010;
+    color: #9d9d9d;
+    bottom: 0;
+    width: 100%;
+}
